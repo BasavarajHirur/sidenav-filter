@@ -1,0 +1,7 @@
+<div class="filter-example">
+  <nav>
+    <filter filterValue="Status" [filters]="status" (filterChange)="selectFilter($event, 'status')"></filter>
+    <filter filterValue="Category" [filters]="categories" (filterChange)="selectFilter($event, 'category')"></filter>
+  </nav>
+  <section [items]="filtedData"></section>
+</div>

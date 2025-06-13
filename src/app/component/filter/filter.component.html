@@ -1,0 +1,7 @@
+<div>
+    <h1>{{filterValue}}</h1>
+    <ul>
+        <li *ngFor="let filter of filters" [class]="selectedFilter === filter ? 'active':''"
+            (click)="selectFilter(filter)">{{filter}}</li>
+    </ul>
+</div>
